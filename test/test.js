@@ -1,32 +1,20 @@
-var dotdot = require('../src/dotdot');
+var transform = require('../src/naked-objects');
 var fs = require('fs');
 var path = require('path');
 
-gt.module('dotdot replacement');
+gt.module('<> replacement');
 
-// foo..bar( => foo.bar.bind(foo,
-gt.test('dotdot basics', function () {
-  gt.func(dotdot, 'is a function');
-  gt.string(dotdot('something'), 'returns a string');
+gt.test('basics', function () {
+  gt.func(transform, 'is a function');
+  gt.string(transform('something'), 'returns a string');
 });
 
-gt.test('foo..bar() -> foo.bar.bind(foo)', function () {
-  var replaced = dotdot('foo..bar()');
-  gt.equal(replaced, 'foo.bar.bind(foo)');
+gt.test('<> -> Object.create(null)', function () {
+  var replaced = transform('<>');
+  gt.equal(replaced, 'Object.create(null)');
 });
 
-gt.test('foo..bar(10) -> foo.bar.bind(foo, 10)', function () {
-  var replaced = dotdot('foo..bar(10)');
-  gt.equal(replaced, 'foo.bar.bind(foo, 10)');
-});
-
-gt.module('e2e');
-
-gt.test('e2e source', function () {
-  var src = fs.readFileSync(path.join(__dirname, 'e2e.js'), 'utf-8');
-  gt.throws(function () {
-    eval(str);
-  }, 'Error', 'expected parser to choke on .. syntax');
-  var replaced = dotdot(src);
-  eval(replaced); // should be fine now
+gt.test('var foo <>; -> ?', function () {
+  var replaced = transform('var foo = <>;');
+  gt.equal(replaced, 'var foo = Object.create(null);');
 });
