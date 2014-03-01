@@ -1,0 +1,35 @@
+{
+  "name": "naked-objects",
+  "version": "0.1.0",
+  "description": "Shorthand notation for Object.create(null) via node module hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/gt test/test*.js --output && node test/e2e-caller.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/naked-objects.git"
+  },
+  "pre-commit": "npm test",
+  "keywords": [
+    "node",
+    "javascript",
+    "loader",
+    "require",
+    "objects",
+    "Object.create"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/naked-objects/issues"
+  },
+  "homepage": "https://github.com/bahmutov/naked-objects",
+  "devDependencies": {
+    "gt": "~0.8.22",
+    "pre-git": "0.0.14"
+  },
+  "dependencies": {
+    "node-hook": "~0.1.0"
+  }
+}
