@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/bahmutov/naked-objects",
   "devDependencies": {
-    "gt": "~0.8.22",
-    "pre-git": "0.0.14"
+    "gt": "~0.8.34",
+    "pre-git": "0.0.15"
   },
   "dependencies": {
     "node-hook": "~0.1.0"

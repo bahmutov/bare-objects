@@ -28,7 +28,7 @@ foo + foo   // TypeError: Cannot convert object to primitive value
 
 ## why?
 
-
+[Sweet naked objects](http://bahmutov.calepin.co/sweet-naked-objects.html)
 
 ## Small print
 
