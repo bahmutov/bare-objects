@@ -1,6 +1,6 @@
 {
   "name": "naked-objects",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shorthand notation for Object.create(null) via node module hook",
   "main": "index.js",
   "scripts": {
