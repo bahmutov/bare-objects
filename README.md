@@ -34,7 +34,6 @@ foo + foo   // TypeError: Cannot convert object to primitive value
 
 Author: Gleb Bahmutov &copy; 2014
 
-* [Changelog](History.md)
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
 * [blog](http://bahmutov.calepin.co/)
