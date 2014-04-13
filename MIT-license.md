@@ -1,5 +1,5 @@
 Copyright 2014 Gleb Bahmutov <gleb.bahmutov@gmail.com>
-http://github.com/bahmutov/naked-objects
+http://github.com/bahmutov/bare-objects
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

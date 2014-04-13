@@ -1,6 +1,6 @@
 {
-  "name": "naked-objects",
-  "version": "0.1.1",
+  "name": "bare-objects",
+  "version": "0.2.0",
   "description": "Shorthand notation for Object.create(null) via node module hook",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:bahmutov/naked-objects.git"
+    "url": "git@github.com:bahmutov/bare-objects.git"
   },
   "pre-commit": "npm test",
   "keywords": [
@@ -22,11 +22,11 @@
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bahmutov/naked-objects/issues"
+    "url": "https://github.com/bahmutov/bare-objects/issues"
   },
-  "homepage": "https://github.com/bahmutov/naked-objects",
+  "homepage": "https://github.com/bahmutov/bare-objects",
   "devDependencies": {
-    "gt": "~0.8.34",
+    "gt": "^0.8.36",
     "pre-git": "0.0.15"
   },
   "dependencies": {
